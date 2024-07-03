@@ -3,11 +3,11 @@
 ## Table of Contents:
 [Tableau Dashboard](https://public.tableau.com/app/profile/julynda.vaughn/viz/AtliQCustomerAnalysisv6_2/AtliQCustomerDemographics)
 
-[Project Visualizations](https://github.com/julyndav/AtliQ-Hardware/tree/main/Analysis%20Images)
+[Project Visualizations](https://github.com/julyndav/SQL/tree/main/AtliQ%20Hardware/Analysis%20Images)
 
-[AtliQ Decomposition Plan](https://github.com/julyndav/AtliQ-Hardware/blob/main/AtliQ%20Decomposition%20Plan%20Project.pdf)
+[AtliQ Decomposition Plan](https://github.com/julyndav/SQL/blob/main/AtliQ%20Hardware/AtliQ%20Decomposition%20Plan%20Project.pdf)
 
-[Jupyter Notebook](https://github.com/julyndav/AtliQ-Hardware/blob/main/AtliQ%20Customer%20Analysis%20Final.ipynb)
+[Jupyter Notebook](https://github.com/julyndav/SQL/blob/main/AtliQ%20Hardware/AtliQ%20Customer%20Analysis%20Final.ipynb)
 <br></br>
 
 ## Required Project Libraries:
@@ -29,7 +29,7 @@
 ## Description of Data: 
 This is an overview of the database tables used for Analysis. Note that since this analysis is customer focused, some of the tables will not be used. 
 #### To help with the intial analysis we used software for get a visual of the dataset tables and how they relate to each other.
-![Table Relationships](https://github.com/julyndav/AtliQ-Hardware/blob/main/Analysis%20Images/Database%20flowchart.png)
+![Table Relationships](https://github.com/julyndav/SQL/blob/main/AtliQ%20Hardware/readmepics/Database%20flowchart.png)
 
 <br></br>
 
@@ -58,7 +58,7 @@ During the Customer Analysis, customer segmentation will be used to understand t
 
 To really embrace the real-world feel and to set good habits, the decomposition plan was created as if I was an actual Analyst for TTWC.  Below is a snippet of the decomposition plan, you can see the entire plan from the link in the Table of Contents. 
 
-![Decomposition Plan](https://github.com/julyndav/AtliQ-Hardware/blob/main/readmepics/decomp.png)
+![Decomposition Plan](https://github.com/julyndav/SQL/blob/main/AtliQ%20Hardware/readmepics/decomp.png)
 <br>
 <br></br>
 
@@ -71,11 +71,11 @@ The goal is to segment the customer data on various metrics and create an action
 
 
 ## SQLite required to connect to the supplied database:
-![Database Connection](https://github.com/julyndav/AtliQ-Hardware/blob/main/readmepics/dbase%20connection.png)
+![Database Connection](https://github.com/julyndav/SQL/blob/main/AtliQ%20Hardware/readmepics/dbase%20connection.png)
 
 
 ## Now to import the libraries that will be used for the analysis:
-![Import Libraries](https://github.com/julyndav/AtliQ-Hardware/blob/main/readmepics/libraries.png)
+![Import Libraries](https://github.com/julyndav/SQL/blob/main/AtliQ%20Hardware/readmepics/libraries.png)
 
 <br></br>
 
@@ -90,12 +90,12 @@ What countries contain AtliQ customers?<br></br>
 The more the data is analized the more insights and questions will arise.
 
 #### Customer to Product Analysis
-![Customer Discount](https://github.com/julyndav/AtliQ-Hardware/blob/main/Analysis%20Images/Average%20Discount%20per%20Customer.jpg)
+![Customer Discount](https://github.com/julyndav/SQL/blob/main/AtliQ%20Hardware/Analysis%20Images/Average%20Discount%20per%20Customer.jpg)
 <br></br>
 
 <b>Insight:</b> India, USA and South Korea have the highest customer product totals. It makes sense for India to be at the top since AtliQ is an India based business. The bar chart has grouped all of the customers for that region, hence the lines in the bars.
 <br></br> <b>Insight:</b> Breaking down the product variable by customer, we can now see why the US had such a high ranking in the previous plot. Amazon has over 1 million products. This may be due to the nature of the Amazon platform and it's ease of use to sell items and which has a vast customer base.
-![Insights](https://github.com/julyndav/AtliQ-Hardware/blob/main/Analysis%20Images/Amount%20Sold%20to%20Customer.jpg)
+![Insights](https://github.com/julyndav/SQL/blob/main/AtliQ%20Hardware/Analysis%20Images/Amount%20Sold%20to%20Customer.jpg)
 <br></br>
 <b>Conclusion on Customer Retention:</b> AtliQ's customer base has only slight fluctuations in numbers. The customer numbers stay fairly consistant. Values not 100, show the slight change in customer numbers. AtliQ has a strong customer base in that there is not a lot of turnover(numbers are not jumping up and down).
 <br></br>
