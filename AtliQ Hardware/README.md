@@ -1,4 +1,7 @@
-## AtliQ-Hardware Project
+# AtliQ-Hardware Project
+
+
+<br></br>
 
 ## Table of Contents:
 [Tableau Dashboard](https://public.tableau.com/app/profile/julynda.vaughn/viz/AtliQCustomerAnalysisv6_2/AtliQCustomerDemographics)
