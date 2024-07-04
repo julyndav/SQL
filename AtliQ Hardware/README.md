@@ -1,6 +1,5 @@
 # Optimizing Customer Insights: A Comprehensive Sales Audit
 As a Junior Analyst with TTWC, I participated in a comprehensive sales audit for AtliQ Hardware, a leading computer hardware producer in India, aiming to enhance their data automation and provide actionable business insights. My primary focus was on customer analysis, where I employed SQL for data extraction, grouping, table creation, and running queries to analyze customer behavior metrics from an SQLite database. Additionally, I used Python for data cleaning and exploratory analysis, and Tableau for creating dynamic visualizations. By segmenting customer data based on geographic and behavioral metrics, I provided AtliQ with detailed insights into customer habits, product performance, and market trends, helping them make more effective sales and marketing strategies. This project showcased my proficiency in data manipulation, analytical thinking, and the ability to translate complex data into strategic business decisions.
-
 <br></br>
 
 ## Table of Contents:
@@ -69,7 +68,7 @@ To really embrace the real-world feel and to set good habits, the decomposition 
 The goal is to segment the customer data on various metrics and create an actionable dashboard. This will allow AtliQ to gain a better understanding of their customers' habits and possibly give insight on new, potential markets. 
 
 <p></p>
-<i> *Note:  TTWC is a fictional company.  This entire analysis was done for course project completion to simulate real-world work environment.</i>
+<i> *Note: TTWC is a fictional company. This entire analysis was a capstone project to simulate real-world work environment.</i>
 <br></br>
 
 
