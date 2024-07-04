@@ -86,17 +86,49 @@ The goal is to segment the customer data on various metrics and create an action
 This section will focus on geographical analysis of the data from a customer standpoint.
 
 Some good questions to ask are:<li>
-What areas have the most customers<li>
 How many customers are there in total<li>
 What countries contain AtliQ customers?<br></br>
-The more the data is analized the more insights and questions will arise.
+<p></p>
 
-#### Customer to Product Analysis
+![Customer_per_Country](https://github.com/julyndav/SQL/blob/main/AtliQ%20Hardware/readmepics/Cust_per_country.png)
+
+Showing the number of customers per country. We are only seeing the first 5 countries thanks to the '.head()' function.
+<br></br>
+
+![Number_Customers](https://github.com/julyndav/SQL/blob/main/AtliQ%20Hardware/Analysis%20Images/Customers%20per%20Region.jpg)
+#### Regions:
+<ul>
+<li>1. EU - European Union</li>
+<li>2. APAC - Asian Pacifc</li>
+<li>3. NA - North America</li>
+<li>4. LATAM - Lating America</li>
+</ul>
+
+<br></br>
+
+## Customer to Product Analysis
+In order to create a full and detailed customers table that will be exported to tableau where customer segmentation can be visualized better, SQL was used to combine the requried data from selected tables. The visualizations in this section are to get a better idea of what to focus on in the main visualization environment and to explore the data with the newly created table. 
+![Combining_tables](https://github.com/julyndav/SQL/blob/main/AtliQ%20Hardware/readmepics/sql_combine_tables.png)
+<i> SQL used to combine tables</i>
+
+![Table_Preview](https://github.com/julyndav/SQL/blob/main/AtliQ%20Hardware/readmepics/Snippet_Comb_Table.png)
+<i> Preview of combined table.</i>
+<br></br>
+
+
+
+
+
+
+
+
+
+
+
+
 ![Customer Discount](https://github.com/julyndav/SQL/blob/main/AtliQ%20Hardware/Analysis%20Images/Average%20Discount%20per%20Customer.jpg)
 <br></br>
 
-<b>Insight:</b> India, USA and South Korea have the highest customer product totals. It makes sense for India to be at the top since AtliQ is an India based business. The bar chart has grouped all of the customers for that region, hence the lines in the bars.
-<br></br> <b>Insight:</b> Breaking down the product variable by customer, we can now see why the US had such a high ranking in the previous plot. Amazon has over 1 million products. This may be due to the nature of the Amazon platform and it's ease of use to sell items and which has a vast customer base.
 ![Insights](https://github.com/julyndav/SQL/blob/main/AtliQ%20Hardware/Analysis%20Images/Amount%20Sold%20to%20Customer.jpg)
 <br></br>
 <b>Conclusion on Customer Retention:</b> AtliQ's customer base has only slight fluctuations in numbers. The customer numbers stay fairly consistant. Values not 100, show the slight change in customer numbers. AtliQ has a strong customer base in that there is not a lot of turnover(numbers are not jumping up and down).
