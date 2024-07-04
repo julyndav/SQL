@@ -74,12 +74,12 @@ The goal is to segment the customer data on various metrics and create an action
 
 ## SQLite required to connect to the supplied database:
 ![Database Connection](https://github.com/julyndav/SQL/blob/main/AtliQ%20Hardware/readmepics/dbase%20connection.png)
-
+<br></br>
 
 ## Now to import the libraries that will be used for the analysis:
 ![Import Libraries](https://github.com/julyndav/SQL/blob/main/AtliQ%20Hardware/readmepics/libraries.png)
-
 <br></br>
+
 
 ## Brief Analysis Overview:
 #### Geographic Segmentation
