@@ -1,5 +1,5 @@
 # Optimizing Customer Insights: A Comprehensive Sales Audit
-#### Capstone Project
+#### TripleTen Capstone Project
 As a Junior Analyst with TTWC, I participated in a comprehensive sales audit for AtliQ Hardware, a leading computer hardware producer in India, aiming to enhance their data automation and provide actionable business insights. My primary focus was on customer analysis, where I employed SQL for data extraction, grouping, table creation, and running queries to analyze customer behavior metrics from an SQLite database. Additionally, I used Python for data cleaning and exploratory analysis, and Tableau for creating dynamic visualizations. By segmenting customer data based on geographic and behavioral metrics, I provided AtliQ with detailed insights into customer habits, product performance, and market trends, helping them make more effective sales and marketing strategies. This project showcased my proficiency in data manipulation, analytical thinking, and the ability to translate complex data into strategic business decisions.
 <br></br>
 
