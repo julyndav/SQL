@@ -108,31 +108,34 @@ Showing the number of customers per country. We are only seeing the first 5 coun
 
 ## Customer to Product Analysis
 In order to create a full and detailed customers table that will be exported to tableau where customer segmentation can be visualized better, SQL was used to combine the requried data from selected tables. The visualizations in this section are to get a better idea of what to focus on in the main visualization environment and to explore the data with the newly created table. 
+<br></br>
+
 ![Combining_tables](https://github.com/julyndav/SQL/blob/main/AtliQ%20Hardware/readmepics/sql_combine_tables.png)
 <i> SQL used to combine tables</i>
+<br></br>
 
 ![Table_Preview](https://github.com/julyndav/SQL/blob/main/AtliQ%20Hardware/readmepics/Snippet_Comb_Table.png)
 <i> Preview of combined table.</i>
 <br></br>
 
+Now that the tables have been combined into a 'working' table, it was time to see what the product volumne as it compared to country. The newly created 'atliq_cust_tbl.' contains a row for customer product total so it will be used to determine product volumne per country.
 
-
-
-
-
-
-
-
-
-
-
-![Customer Discount](https://github.com/julyndav/SQL/blob/main/AtliQ%20Hardware/Analysis%20Images/Average%20Discount%20per%20Customer.jpg)
+![Prod_vs_Country](https://github.com/julyndav/SQL/blob/main/AtliQ%20Hardware/Analysis%20Images/total_by_country.png)
+<b>Insight:</b> India, USA and South Korea have the highest customer product totals. It makes sense for India to be at the top since AtliQ is an India based business. The bar chart has grouped all of the customers for that country; the lines in the bars separate each business.
 <br></br>
 
-![Insights](https://github.com/julyndav/SQL/blob/main/AtliQ%20Hardware/Analysis%20Images/Amount%20Sold%20to%20Customer.jpg)
-<br></br>
-<b>Conclusion on Customer Retention:</b> AtliQ's customer base has only slight fluctuations in numbers. The customer numbers stay fairly consistant. Values not 100, show the slight change in customer numbers. AtliQ has a strong customer base in that there is not a lot of turnover(numbers are not jumping up and down).
-<br></br>
+
+## Churn Rate
+To determine customer turnover and to see if there were any concerning customer trends, Python was used to find the churn rate. 
+
+
+
+
+
+
+
+
+
 
 ## Project Conclusion(s):
 
