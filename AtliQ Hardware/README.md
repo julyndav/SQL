@@ -13,6 +13,16 @@ As a Junior Analyst with TTWC, I participated in a comprehensive sales audit for
 [Jupyter Notebook](https://github.com/julyndav/SQL/blob/main/AtliQ%20Hardware/AtliQ%20Customer%20Analysis%20Final.ipynb)
 <br></br>
 
+### Skills Demostrated:
+<ul>
+<li>SQL (for data cleaning, queries, table creation)</li>
+<li>Panda Libraries (for data visualizations)</li>
+<li>Dashboard Design (Tableau)</li>
+<li>Extract and Loading Data</li>
+</ul>
+<br></br>
+
+
 ## Required Project Libraries:
 | Library |Purpose |
 | --- | --- |
