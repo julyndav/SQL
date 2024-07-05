@@ -1,4 +1,5 @@
 # Optimizing Customer Insights: A Comprehensive Sales Audit
+#### Capstone Project
 As a Junior Analyst with TTWC, I participated in a comprehensive sales audit for AtliQ Hardware, a leading computer hardware producer in India, aiming to enhance their data automation and provide actionable business insights. My primary focus was on customer analysis, where I employed SQL for data extraction, grouping, table creation, and running queries to analyze customer behavior metrics from an SQLite database. Additionally, I used Python for data cleaning and exploratory analysis, and Tableau for creating dynamic visualizations. By segmenting customer data based on geographic and behavioral metrics, I provided AtliQ with detailed insights into customer habits, product performance, and market trends, helping them make more effective sales and marketing strategies. This project showcased my proficiency in data manipulation, analytical thinking, and the ability to translate complex data into strategic business decisions.
 <br></br>
 
@@ -124,18 +125,18 @@ Now that the tables have been combined into a 'working' table, it was time to se
 <b>Insight:</b> India, USA and South Korea have the highest customer product totals. It makes sense for India to be at the top since AtliQ is an India based business. The bar chart has grouped all of the customers for that country; the lines in the bars separate each business.
 <br></br>
 
-
 ## Churn Rate
 To determine customer turnover and to see if there were any concerning customer trends, Python was used to find the churn rate. 
 
+![Churn_Rate](https://github.com/julyndav/SQL/blob/main/AtliQ%20Hardware/readmepics/churn_rate.png)
+Insight: There seems to be a cycle in the plot where there is a period of a four month increase in purchases by the customer. This increase goes from September to December. It's extremly evident in 2021. More information will need to be gathered to see if the lockdowns during the recent pandemic is the reason for the sudden spike in customer activity.
 
+## Customer Purchasing Trends?
 
-
-
-
-
-
-
+![Avg_trend](https://github.com/julyndav/SQL/blob/main/AtliQ%20Hardware/readmepics/avg_purchase_trend.png)
+<b>Insight:</b> There seems to be a cycle in the plot where there is a period of a four month increase in purchases by the customer. This increase goes from September to December. It's extremly evident in 2021. More information will need to be gathered to see if the lockdowns during the recent pandemic is the reason for the sudden spike in customer activity.
+<br></br>
+<br></br>
 
 ## Project Conclusion(s):
 
