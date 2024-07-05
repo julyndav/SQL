@@ -108,12 +108,12 @@ Showing the number of customers per country. We are only seeing the first 5 coun
 
 ![Number_Customers](https://github.com/julyndav/SQL/blob/main/AtliQ%20Hardware/Analysis%20Images/Customers%20per%20Region.jpg)
 #### Regions:
-<ul>
-<li>1. EU - European Union</li>
-<li>2. APAC - Asian Pacifc</li>
-<li>3. NA - North America</li>
-<li>4. LATAM - Lating America</li>
-</ul>
+
+1. EU - European Union
+2. APAC - Asian Pacifc
+3. NA - North America
+4. LATAM - Lating America
+
 
 <br></br>
 
