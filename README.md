@@ -6,3 +6,15 @@
 <li>Advanced Query Techniques: Demonstrations of complex joins, subqueries, window functions, and more.</li>
 <li>Each project is accompanied by detailed documentation explaining the objectives, methodologies, and insights derived.</li>
 </ul>
+
+
+## Project List:
+| Project | Description |
+| --- | --- | 
+| [AtliQ Hardware](https://github.com/julyndav/SQL/tree/main/AtliQ%20Hardware) | Optimizing Customer Insights: A Comprehensive Sales Audit |
+
+
+<br></br>
+## Project Notes:
+
+</ul>
