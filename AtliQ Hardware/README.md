@@ -161,14 +161,5 @@ From the above analysis and the cyclical trend that has been shown, AtliQ is on 
 <br></br>
 
 
-## Resources used for the completetion of the project:
-<blockquote>
-<b>Project Resources:</b>
-<li> Quick DBD for database flowchart layout</li>
-<li> https://learnsql.com/blog/grouping-data-in-microsoft-sql-server/</li>
-<li>https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_csv.html</li>
-<li>https://learnsql.com/blog/how-to-join-two-tables-in-sql/</li>
-<li> Markdown Cheat Sheet - https://medium.com/analytics-vidhya/the-ultimate-markdown-guide-for-jupyter-notebook-d5e5abf728fd</li>
-<b>Tableau Resources:</b>
-<li> https://www.tableau.com/blog/LOD-expressions</li>
+
 
