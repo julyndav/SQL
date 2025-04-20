@@ -61,37 +61,12 @@ Using this system, monthly reports can be generated to monitor whether case mana
 | Overall Monthly Totals | Running total units per month for each client |
 | TCM_Monthly_Units_Used | Case Manager client specific monthly units used/remaining |
 <p></p>
-
-
-## Analysis Steps:
-| Step |Description |
-| --- | --- |
-| 1 | Create project description |
-| 2 | Import/installing libraries |
-| 3 | Upload and analyize data |
-| 4 | Data cleaning and preparation |
-| 5 | Customer segmentation and analysis |
-| 6 | Product Analysis (user behaviors and retention rate) |
-| 7 | Sales Analysis (conversion rate, purchase size, LTV)|
-| 8 | Marketing Analysis (Marketing costs, CAC, ROMI) |
-| 9 | Conclusion and Reccomendations |
-
 <br></br>
 
-# Analysis Overview:
+# Database Overview:
 
-## Data Cleaning and Preparation:
-<OL>
-<li>Extract datasets from project site.</li>
-<li>Import/Install required libraries.</li>
-<li>Load datasets into Jupyter Notebook for analysis.</li>
-<UL>
-<li>Data was previously viewed via excel. When loading into Jupyter, data was parsed and data types set.</li>
-<li>Tables were checked using '.info' function to see if optimized.</li>   
-</UL>
-<LI>Tables checked for duplicates
-</OL>
-<p></p>
+### Data Cleaning and Preparation:
+
 
 ![Data_cleaning](https://github.com/julyndav/Python/blob/main/Business%20Analytics/Images/data%20cleaning1.png)
 
