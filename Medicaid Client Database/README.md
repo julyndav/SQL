@@ -43,23 +43,25 @@ Using this system, monthly reports can be generated to monitor whether case mana
 | janJOIN-decJOIN | Update Queries for when new clients are added to agency |
 <p></p>
 
-### Orders table:
-| Variable | Purpose |
+### Forms:
+| Form Name | Purpose |
 | --- | --- |
-| Uid | Unique identifier of the user making an order |
-| Buy Ts | Order date and time |
-| Revenue | Revenue from the order |
+| FRM_IA_Billing | Database main menu |
+| Case Manager Form | Enter case manager information and photo. Contains subform for TCM monthly unit totals |
+| Client Billing Overview | Billing units, amounts billed and amounts paid for each client for the entire year |
+| Client Master Form | Client information along with client photo option |
+| Billing_Jan-Dec | Monthly client unit entry forms. Auto calculates billing amount and allows for payment entry |
+| Jan-Dec_Unit_Totals | TCM monthly unit total sub-form |
+| Subfrm_TCM_Unit_Totals | Monthly unit total subform for 'Case Manager Form' |
 <p></p>
 
-### Costs table: 
-<i>Data on marketing expenses</i>
-| Variable | Purpose |
+### Reports: 
+| Report Name| Purpose |
 | --- | --- |
-| Source_id | Ad source identifier |
-| dt | Date |
-| costs | Expenses for ad source |
+| Overall Monthly Totals | Running total units per month for each client |
+| TCM_Monthly_Units_Used | Case Manager client specific monthly units used/remaining |
 <p></p>
-<br></br>
+
 
 ## Analysis Steps:
 | Step |Description |
