@@ -12,10 +12,12 @@ Using this system, monthly reports can be generated to monitor whether case mana
 
 ### Skills Used:
 <ul>
-<li>Extract and Loading Data</li>   
-<li>Python (for data cleaning, data manipulation and exploratory analysis)</li>
-<li>Panda Libraries (for data visualizations)</li>
-<li>Business Analytics(CAC, Cohort Analysis, ROI)</li>
+<li>Microsoft Access database design and development</li>   
+<li>SQL for writing SELECT and UNION queries</li>
+<li>Creating user-friendly forms and sub-forms for data entry and management</li>
+<li>Designing custom reports for client and case manager insights</li>
+<li>Building complex queries with criteria filters, expressions, and calculated fields</li>  
+<li>Data normalization and establishing table relationships</li>   
 </ul>
 <br></br>
 
