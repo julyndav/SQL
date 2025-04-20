@@ -125,3 +125,19 @@ Using this system, monthly reports can be generated to monitor whether case mana
    <li>PA >> Prior Authorization. When client exceed their 240 unit limit, case managers can request additional units.</li>
  </ul>
 <p></p>
+
+### Clients by TCM
+<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/TCM%20List.png" alt="tcm unit report" width="600"/>
+
+<ul>
+   <li>A simple client list by case manager.</li>
+   </ul>
+<p></p>
+
+### View UHC Auths
+<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/UHC%20Clients.png" alt="uhc auths" width="600"/>
+
+<ul>
+   <li>All United clients require an Authorization or claims will be denied.This list keeps tracks of those with and without authorizations.</li>
+   </ul>
+<p></p>
