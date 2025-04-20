@@ -9,12 +9,8 @@ The goal of this project was to improve and streamline the reporting process for
 Using this system, monthly reports can be generated to monitor whether case managers are meeting their required quotas and to ensure that clients have not exceeded their unit limits. In addition, the database simplifies the process of entering, updating, and managing client information, making overall data management more efficient and reliable.
 <br></br>
 
-## Table of Contents:
 
-[Jupyter Notebook](https://github.com/julyndav/Python/blob/main/Business%20Analytics/YandexAfisha_BA.ipynb)
-<br></br>
-
-### Skills Demostrated:
+### Skills Used:
 <ul>
 <li>Extract and Loading Data</li>   
 <li>Python (for data cleaning, data manipulation and exploratory analysis)</li>
