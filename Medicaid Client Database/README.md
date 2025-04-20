@@ -21,24 +21,23 @@ Using this system, monthly reports can be generated to monitor whether case mana
 </ul>
 <br></br>
 
-## Required Project Libraries:
-| Library |Purpose |
-| --- | --- |
-| Pandas | Main library for working with data |
-| Numpy | Used for numerical operations on large quantities of data |
-| Seaborn | Python visualization library based on matplotlib |
-| Matplotlib | Python visualization library |
-<br></br>
+## Database Elements:
 
-## Description of the data
+### Tables
+| Table Name |Purpose |
+| --- | --- |
+| MasterClientList | Main client information table |
+| Case Managers | Case Manager information |
+| Jan-Dec_Billing |Tables to hold the corresponding monthly billing data |
+| Archive_Table_2025 | Holds all billing data for 2025 year |
 <p></p>
 
-### Visits table:
-| Variable | Purpose |
+### Queries:
+| Query Name | Purpose |
 | --- | --- |
-| Uid | User's unique identifier |
-| Device | User's device |
-| Start Ts |Session start date and time |
+| Jan-Dec_Unit_Totals | Monthly unit totals for each Case Manager, includes Mediciad and Private Pay columns. |
+| Monthly Totals | Lists clients and their corresponding Case Manager along units used per month |
+| Monthly_Totals_TCM |Case Manager client list and the units each client has used each month |
 | End Ts | session end date and time |
 | Source Id | Identifier of the ad source the user came from |
 <p></p>
