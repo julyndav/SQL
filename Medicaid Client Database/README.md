@@ -68,7 +68,7 @@ Using this system, monthly reports can be generated to monitor whether case mana
 <br></br>
  
 ### Main Menu
-<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Main%20Dashboard%20Menu.png" alt="Main Menu" width="600"/>
+<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Menu.png" alt="Main Menu" width="600"/>
 
 <ul>
    <li>Interactive buttons to go to various forms and reports.</li>
@@ -107,15 +107,6 @@ Using this system, monthly reports can be generated to monitor whether case mana
  </ul>
 <p></p>
 
-### Billing per Client
-<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Client%20Billing%20Overview.png" alt="Billing per Client form" width="600"/>
-
-<ul>
-   <li>There is no data entry on this form, simply for information purposes.</li>
-   <li>OTCM Units >> Other TCM Units. If another case manager bills on a client that is not their's, those units go in this field.</li>
- </ul>
-<p></p>
-
 ### TCM Units Report
 <img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/TCMs%20unit%20report.png" alt="tcm unit report" width="600"/>
 
@@ -139,5 +130,14 @@ Using this system, monthly reports can be generated to monitor whether case mana
 
 <ul>
    <li>All United clients require an Authorization or claims will be denied.This list keeps tracks of those with and without authorizations.</li>
+   </ul>
+<p></p>
+
+### Billing Month Entry
+<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Monthly%20Billing%20Form.png" alt="monthly billing" width="600"/>
+
+<ul>
+   <li>Small Unit_Totals sub form. You can enter case managers monthly units and private pay units. Only Medicaid units can be billed for. Private Pay have to be processed by the TCM. 'Total TCM Units' and 'Total Billed Units' - this is to ensure that all TCM units have been billed for; the two values should be the same. The 'Refresh' button is to make sure all units entered are in the totals.</li>
+ <li>In the actual entry form, 'Units', 'OUnits', 'Paid', 'Claim#', and 'Note' are the only fields to enter data.  'Total Units', '$Bill', and 'Balance' are all calculated fields.</li>
    </ul>
 <p></p>
