@@ -6,7 +6,7 @@
 
 The goal of this project was to improve and streamline the reporting process for both clients and case managers at Company IA. The database was designed to handle monthly client billing through entry forms, where total service units are recorded. These monthly totals are calculated based on the daily billing entries submitted by case managers throughout the month.
 
-Using this system, monthly reports can be generated to monitor whether case managers are meeting their required quotas and to ensure that clients have not exceeded their unit limits. In addition, the database simplifies the process of entering, updating, and managing client information, making overall data management more efficient and reliable.
+Using this system, monthly reports can be generated to monitor whether case managers are meeting their required quotas and to ensure that clients have not exceeded their unit limits. In addition, the database simplifies the process of entering, updating, and managing client information, making overall data management more efficient and reliable. The database also centralizes billing data for furture analysis and creating ageing reports. 
 <br></br>
 
 
@@ -64,19 +64,64 @@ Using this system, monthly reports can be generated to monitor whether case mana
 <br></br>
 
 # Database Overview:
-
-#### Main Menu
-![Main Menu](https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Main%20Dashboard%20Menu.png)
+<i>TCM > Targeted Case Manager</i>
+<br></br>
+ 
+### Main Menu
+<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Main%20Dashboard%20Menu.png" alt="Main Menu" width="600"/>
 
 <ul>
-   <li>Interactive buttons to go to various forms and reports</li>
-   <li>Billing Month buttons take the user to the individual months</li>
-<br></br>
+   <li>Interactive buttons to go to various forms and reports.</li>
+   <li>Billing Month buttons take the user to the individual months.</li>
+</ul>
+<p></p>
 
-#### Client Information
-![Client Information](https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Client%20information.png)
+### Client Information
+<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Client%20information.png" alt="Client Information" width="600"/>
 
 <ul>
-   <li>Interactive buttons to go to various forms and reports</li>
-   <li>Billing Month buttons take the user to the individual months</li>
-<br></br>
+   <li>Client information entry.</li>
+   <li>Place holder for possible client photo.</li>
+   <li>Medicaid ID is primary key.</li>
+   <li>Status dropdown: Can select either 'Medicaid' or 'PrivatePay' which are non medicaid clients.</li>
+   <li>MCO dropdown: Managed Care Organization (MCO) selection. Clients are under the following MCOs, United Health Care(U), Sunflower(S) or Healthy Blue(HB).</li>
+</ul>
+<p></p>
+
+### Case Manager Information
+<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Case%20Managers.png" alt="Case Manager Form" width="600"/>
+
+<ul>
+   <li>Place holder for employee photo.</li>
+   <li>Sub-form (Unit Summary). Lists case manager's monthly unit totals that they billed for. PP=Private Pay(no medicaid funding). Unit Summary values can be entered on this form or when entering the monthly billing units.</li>
+   <li>ID is primary key.</li>
+</ul>
+<p></p>
+
+### Billing per Client
+<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Client%20Billing%20Overview.png" alt="Billing per Client form" width="600"/>
+
+<ul>
+   <li>There is no data entry on this form, simply for information purposes.</li>
+   <li>OTCM Units >> Other TCM Units. If another case manager bills on a client that is not their's, those units go in this field.</li>
+ </ul>
+<p></p>
+
+### Billing per Client
+<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Client%20Billing%20Overview.png" alt="Billing per Client form" width="600"/>
+
+<ul>
+   <li>There is no data entry on this form, simply for information purposes.</li>
+   <li>OTCM Units >> Other TCM Units. If another case manager bills on a client that is not their's, those units go in this field.</li>
+ </ul>
+<p></p>
+
+### TCM Units Report
+<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/TCMs%20unit%20report.png" alt="tcm unit report" width="600"/>
+
+<ul>
+   <li>Running total of units that a Case Managers clients have used for the year.</li>
+   <li>IU >> Initial Units. All Medicaid clients are alloted 240 units per year.</li>
+   <li>PA >> Prior Authorization. When client exceed their 240 unit limit, case managers can request additional units.</li>
+ </ul>
+<p></p>
