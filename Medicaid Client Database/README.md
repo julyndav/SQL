@@ -38,8 +38,9 @@ Using this system, monthly reports can be generated to monitor whether case mana
 | Jan-Dec_Unit_Totals | Monthly unit totals for each Case Manager, includes Mediciad and Private Pay columns. |
 | Monthly Totals | Lists clients and their corresponding Case Manager along units used per month |
 | Monthly_Totals_TCM |Case Manager client list and the units each client has used each month |
-| End Ts | session end date and time |
-| Source Id | Identifier of the ad source the user came from |
+| TCM List | TCM clients with corresponding MCO and DOB |
+| UHC Clients | List of United Health Care clients and their corresponding authorization number |
+| janJOIN-decJOIN | Update Queries for when new clients are added to agency |
 <p></p>
 
 ### Orders table:
