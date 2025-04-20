@@ -66,9 +66,7 @@ Using this system, monthly reports can be generated to monitor whether case mana
 # Database Overview:
 
 #### Data Cleaning and Preparation:
-
-
-![Main Dashboard](https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Main%20Dashboard%20Menu.png)
+![Main Menu](https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Main%20Dashboard%20Menu.png)
 
 Now that the data has been cleaned, data types are set and it was determined that there are no duplicates, analysis can start. 
 <br></br>
