@@ -141,3 +141,40 @@ Using this system, monthly reports can be generated to monitor whether case mana
  <li>In the actual entry form, 'Units', 'OUnits', 'Paid', 'Claim#', and 'Note' are the only fields to enter data.  'Total Units', '$Bill', and 'Balance' are all calculated fields.</li>
    </ul>
 <p></p>
+<br></br>
+
+## MISC Database Elements:
+
+### Union Query Sample
+<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Monthly%20Billing%20Union%20Code.png" alt="union query" width="600"/>
+
+<ul>
+   <li>The union queries allow information from two separate tables, 'MasterClientList' and 'Jan_Billing' to be combined into one. This is for the monthly billing entry forms. Each month has their own union query.</li>
+ <li>The 4 columns from the "MasterClientList'table are joined with the columns from the 'Jan_Billing' table based on the Medicaid ID's from both tables as the key column. </li>
+   </ul>
+<p></p>
+
+### Join Query Sample
+<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/join%20query.png" alt="union query" width="600"/>
+
+<ul>
+   <li>This is an example of one of the monthly Update Queries. For this database, join queries are used to ensure that newly entered clients are added to the monthly billing entry forms. The monthly billng forms are tied to their corresponding billing query.</li>
+   </ul>
+<p></p>
+
+### Overall Units Used - TCM
+<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Overall%20Units%20Used%20TCM.png" alt="union query" width="600"/>
+
+<ul>
+   <li>This is a monthly update report that all Case Managers receive via email. This allows them to see how their clients are using their units and keeps them from running out of units. Once a client has exhuasted their alloted units, any claims submitted after that will be denied. This report contains conditional formatting. When the clients 'Remaining Units' drops to 50, the client is highlighted yellow. When their remaining units drop to 20 or less, the client is highlighted red, signalling that the case manager needs to submit paperwork for additional client units.</li>
+   </ul>
+<p></p>
+
+### Other Database Information
+<ul>
+   <li>Tables can be exported into Excel files.</li>
+ <li>Database was split into a front and rear end. The front end can be dispersed to other senior staff members while the back-end keeps all tables safe from accidental editing.</li>
+ <li>Each month the TCM's and upper management receive client unit reports via email.</li>
+ <li>The only other staff with access to this database is the President of the company; allowing them to view billing and unit status at anytime via their front-end portal.</li>
+   </ul>
+<p></p>
