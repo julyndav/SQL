@@ -84,7 +84,7 @@ Using this system, monthly reports can be generated to monitor whether case mana
    <li>Place holder for possible client photo.</li>
    <li>Medicaid ID is primary key.</li>
    <li>Status dropdown: Can select either 'Medicaid' or 'PrivatePay' which are non medicaid clients.</li>
-   <li>MCO dropdown: Managed Care Organization (MCO) selection. Clients are under the following MCOs, United Health Care(U), Sunflower(S) or Healthy Blue(HB).</li>
+   <li>MCO dropdown: Managed Care Organization (MCO) selection. Clients are under the following MCOs, United Health Care(U), Sunflower(S) or Aetna(A).</li>
 </ul>
 <p></p>
 
