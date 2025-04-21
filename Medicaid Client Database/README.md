@@ -68,7 +68,7 @@ Using this system, monthly reports can be generated to monitor whether case mana
 <br></br>
  
 ### Main Menu
-<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Menu.png" alt="Main Menu" width="600"/>
+<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Main%20Dashboard%20Menu.png" alt="Main Menu" width="600"/>
 
 <ul>
    <li>Interactive buttons to go to various forms and reports.</li>
