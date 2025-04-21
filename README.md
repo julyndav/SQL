@@ -14,8 +14,3 @@
 | [AtliQ Hardware](https://github.com/julyndav/SQL/tree/main/AtliQ%20Hardware) | Optimizing Customer Insights: A Comprehensive Sales Audit |
 | [Medicaid Database](https://github.com/julyndav/SQL/tree/main/Medicaid%20Client%20Database) | Medicaid Client and Case Manager MS Access Database |
 
-
-<br></br>
-## Project Notes:
-
-</ul>
