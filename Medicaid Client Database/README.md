@@ -13,15 +13,22 @@ The database was built to centralize billing information, support accurate month
 In addition, the system simplifies the management of client demographic information, improves data entry workflows through structured forms, and establishes a reliable data foundation for future analyses such as aging reports or long-term service utilization trends.
 </p>
 
-
-### Skills Used:
+### Key Features:
 <ul>
-<li>Microsoft Access database design and development</li>   
-<li>SQL for JOINS, QUERIES and SUBQUERIES</li>
-<li>Creating user-friendly forms and sub-forms for data entry and management</li>
-<li>Designing custom reports for client and case manager insights</li>
-<li>Building complex queries with criteria filters, expressions, and calculated fields</li>  
-<li>Data normalization and establishing table relationships</li>   
+<li>Centralized Billing Workflow – Daily entries automatically feed into monthly billing summaries, reducing manual effort and minimizing errors.</li>
+<li>User-Friendly Entry Forms – Custom forms and sub-forms to efficiently enter, update, and validate client records and service data.</li>
+<li>Automated Reporting – Monthly and on-demand reports provide insights into service utilization, quota tracking, and potential billing exceptions.</li>
+ <li>Data Governance – Normalized table structures and relationships ensure data consistency and improve long-term maintainability.</li>
+</ul>
+
+
+### Skills & Tools Applied:
+<ul>
+<li>Database Architecture & Design: Relational design, table normalization, and referential integrity</li>   
+<li>Microsoft Access Development: Forms, sub-forms, queries, macros, and report design</li>
+<li>SQL: Joins, subqueries, criteria filters, calculated fields, and complex query logic</li>
+<li>Data Validation & Quality Controls: Input rules, lookup tables, and structured form workflows</li>
+<li>Reporting: Custom billing, utilization, and compliance reports for both clients and case managers</li>   
 </ul>
 <br></br>
 
