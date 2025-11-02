@@ -12,7 +12,6 @@ The database was built to centralize billing information, support accurate month
 <p>
 In addition, the system simplifies the management of client demographic information, improves data entry workflows through structured forms, and establishes a reliable data foundation for future analyses such as aging reports or long-term service utilization trends.
 </p>
-<br></br>
 
 
 ### Skills Used:
