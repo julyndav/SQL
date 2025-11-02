@@ -13,7 +13,7 @@ Using this system, monthly reports can be generated to monitor whether case mana
 ### Skills Used:
 <ul>
 <li>Microsoft Access database design and development</li>   
-<li>SQL for writing SELECT and UNION queries</li>
+<li>SQL for JOINS, QUERIES and SUBQUERIES</li>
 <li>Creating user-friendly forms and sub-forms for data entry and management</li>
 <li>Designing custom reports for client and case manager insights</li>
 <li>Building complex queries with criteria filters, expressions, and calculated fields</li>  
