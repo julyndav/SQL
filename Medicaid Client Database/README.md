@@ -2,11 +2,17 @@
 
 ## Project overview:
 
-**<i>Due to the nature of the data involved, the sensitve parts have been blurred out of the project screen shots.</i>
+**<i>This project focuses on streamlining and improving the Medicaid client billing and reporting workflow for Company IA. Due to the sensitive nature of the underlying data, screenshots in this repository have been blurred or masked.
 
-The goal of this project was to improve and streamline the reporting process for both clients and case managers at Company IA. The database was designed to handle monthly client billing through entry forms, where total service units are recorded. These monthly totals are calculated based on the daily billing entries submitted by case managers throughout the month.
-
-Using this system, monthly reports can be generated to monitor whether case managers are meeting their required quotas and to ensure that clients have not exceeded their unit limits. In addition, the database simplifies the process of entering, updating, and managing client information, making overall data management more efficient and reliable. The database also centralizes billing data for furture analysis and creating ageing reports. 
+The database was built to centralize billing information, support accurate monthly reporting, and improve efficiency for both case managers and administrative staff. Daily service entries submitted by case managers roll up into monthly totals, which are then used to generate billing statements and performance reports. These reports help ensure:
+<ul>
+<li>Case managers meet their required monthly service quotas</li>
+<li>Clients do not exceed their authorized service units</li>
+<li>Billing data is consistent, accurate, and audit-ready</li>
+</ul>
+<p>
+In addition, the system simplifies the management of client demographic information, improves data entry workflows through structured forms, and establishes a reliable data foundation for future analyses such as aging reports or long-term service utilization trends.
+</p>
 <br></br>
 
 
