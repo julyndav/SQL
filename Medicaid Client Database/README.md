@@ -1,8 +1,7 @@
 # IA Client Medicaid Database
 
 ## Project overview:
-
-This project focuses on streamlining and improving the Medicaid client billing and reporting workflow for Company IA. <i>Due to the sensitive nature of the underlying data, screenshots in this repository have been blurred or masked.</i>
+<i>Due to the sensitive nature of the underlying data, screenshots in this repository have been blurred or masked.</i>
 
 The database was built to centralize billing information, support accurate monthly reporting, and improve efficiency for both case managers and administrative staff. Daily service entries submitted by case managers roll up into monthly totals, which are then used to generate billing statements and performance reports. These reports help ensure:
 <ul>
