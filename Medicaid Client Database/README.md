@@ -162,14 +162,6 @@ In addition, the system simplifies the management of client demographic informat
    </ul>
 <p></p>
 
-### Join Query Sample
-<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/join%20query.png" alt="union query" width="600"/>
-
-<ul>
-   <li>This is an example of one of the monthly Update Queries. For this database, join queries are used to ensure that newly entered clients are added to the monthly billing entry forms. The monthly billng forms are tied to their corresponding billing query.</li>
-   </ul>
-<p></p>
-
 ### Overall Units Used - TCM
 <img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Overall%20Units%20Used%20TCM.png" alt="union query" width="600"/>
 
