@@ -156,25 +156,28 @@ In addition, the system simplifies the management of client demographic informat
 ### Union Query Sample
 <img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Monthly%20Billing%20Union%20Code.png" alt="union query" width="600"/>
 
-<ul>
-   <li>The union queries allow information from two separate tables, 'MasterClientList' and 'Jan_Billing' to be combined into one. This is for the monthly billing entry forms. Each month has their own union query.</li>
- <li>The 4 columns from the "MasterClientList'table are joined with the columns from the 'Jan_Billing' table based on the Medicaid ID's from both tables as the key column. </li>
-   </ul>
+Union queries are used throughout the database to combine client demographic data with monthly billing entries. Each month includes its own union query, which merges four key fields from the MasterClientList with corresponding fields from the monthly Jan_Billing (and similar) tables.
+The join is performed using the Medicaid ID as the shared key, ensuring accurate alignment of client records across tables.
+These union queries power the monthly billing entry forms and allow case managers to view a complete picture of each client’s billing activity without duplicating data.
 <p></p>
 
 ### Overall Units Used - TCM
 <img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Overall%20Units%20Used%20TCM.png" alt="union query" width="600"/>
 
+This report is generated and emailed to all case managers on a monthly basis. It provides a detailed breakdown of each client’s unit utilization and remaining authorized units. This prevents overbilling and helps ensure clients do not exceed their allotted service limits, which would result in claim denials.
+<p></p>
+The report also uses conditional formatting to highlight clients who are approaching their unit limits:
 <ul>
-   <li>This is a monthly update report that all Case Managers receive via email. This allows them to see how their clients are using their units and keeps them from running out of units. Once a client has exhuasted their alloted units, any claims submitted after that will be denied. This report contains conditional formatting. When the clients 'Remaining Units' drops to 50, the client is highlighted yellow. When their remaining units drop to 20 or less, the client is highlighted red, signalling that the case manager needs to submit paperwork for additional client units.</li>
-   </ul>
+<li>Yellow highlight – Remaining units drop to 50. </li>
+<li>Red highlight – Remaining units fall to 20 or fewer, signaling that a case manager must submit paperwork for additional units. </li>
+This automated alerting ensures proactive management of client authorizations and minimizes compliance risks.
+</ul>
 <p></p>
 
-### Other Database Information
+### Other Database Details:
 <ul>
-   <li>Tables can be exported into Excel files.</li>
- <li>Database was split into a front and rear end. The front end can be dispersed to other senior staff members while the back-end keeps all tables safe from accidental editing.</li>
- <li>Each month the TCM's and upper management receive client unit reports via email.</li>
- <li>The only other staff with access to this database is the President of the company; allowing them to view billing and unit status at anytime via their front-end portal.</li>
+   <li><b>Excel Exporting:</b> All major tables and datasets can be exported to Excel for external reporting, auditing, or ad-hoc analysis.</li>
+ <li><b>Front-End / Back-End Split:</b> The database is split for security and stability. The front-end (forms, queries, reports) is distributed to senior staff, while the back-end securely stores all tables and prevents accidental data modification.</li>
+ <li><b> Monthly Emails:</b> Case managers and upper management receive automated monthly unit utilization summaries to support oversight and operational decision-making.</li>
    </ul>
 <p></p>
