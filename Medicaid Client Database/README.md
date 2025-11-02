@@ -37,33 +37,32 @@ In addition, the system simplifies the management of client demographic informat
 ### Tables
 | Table Name |Purpose |
 | --- | --- |
-| MasterClientList | Main client information table |
-| Case Managers | Case Manager information |
-| Jan-Dec_Billing |Tables to hold the corresponding monthly billing data |
-| Archive_Table_2025 | Holds all billing data for 2025 year |
+| MasterClientList | Stores client demographic and authorization information. |
+| Case Managers | Contains case manager profiles and related staffing information. |
+| Jan-Dec_Billing |Monthly tables used to capture service units for each respective month. |
+| Archive_Table_2025 | Consolidated archive containing all billing data for the 2025 calendar year. |
 <p></p>
 
 ### Queries:
 | Query Name | Purpose |
 | --- | --- |
-| Jan-Dec_Unit_Totals | Monthly unit totals for each Case Manager, includes Mediciad and Private Pay columns. |
-| Monthly Totals | Lists clients and their corresponding Case Manager along units used per month |
-| Monthly_Totals_TCM |Case Manager client list and the units each client has used each month |
-| TCM List | TCM clients with corresponding MCO and DOB |
-| UHC Clients | List of United Health Care clients and their corresponding authorization number |
-| janJOIN-decJOIN | Update Queries for when new clients are added to agency |
+| Jan-Dec_Unit_Totals | Calculates monthly unit totals for each case manager, including Medicaid and Private Pay segments. |
+| Monthly Totals | Lists clients, corresponding Case Manager along units used per month. |
+| Monthly_Totals_TCM | Provides case managers with a detailed view of their clients and each client's monthly unit utilization. |
+| TCM List | Generates a list of targeted case management (TCM) clients along with their MCO and date of birth. |
+| UHC Clients | List of United Health Care clients and their corresponding authorization number. |
+| janJOIN-decJOIN | Update queries used to sync new client additions across monthly billing tables. |
 <p></p>
 
 ### Forms:
 | Form Name | Purpose |
 | --- | --- |
-| FRM_IA_Billing | Database main menu |
+| FRM_IA_Billing | Main navigation menu for the database. |
 | Case Manager Form | Enter case manager information and photo. Contains subform for TCM monthly unit totals |
-| Client Billing Overview | Billing units, amounts billed and amounts paid for each client for the entire year |
-| Client Master Form | Client information along with client photo option |
-| Billing_Jan-Dec | Monthly client unit entry forms. Auto calculates billing amount and allows for payment entry |
-| Jan-Dec_Unit_Totals | TCM monthly unit total sub-form |
-| Subfrm_TCM_Unit_Totals | Monthly unit total subform for 'Case Manager Form' |
+| Client Billing Overview | High-level view of client billing activity, including units, billed amounts, and amounts paid year-to-date. |
+| Client Master Form | Centralized form for managing client demographic and authorization details, with optional photo upload. |
+| Billing_Jan-Dec | Monthly billing entry forms that calculate billing amounts automatically and allow payment entry tracking. |
+| Jan-Dec_Unit_Totals | Subform summarizing monthly TCM unit totals. |
 <p></p>
 
 ### Reports: 
