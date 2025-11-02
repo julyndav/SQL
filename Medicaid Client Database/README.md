@@ -74,8 +74,6 @@ In addition, the system simplifies the management of client demographic informat
 <br></br>
 
 # Database Overview:
-<i>TCM > Targeted Case Manager</i>
-<br></br>
  
 ### Main Menu
 <img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Menu.png" alt="Main Menu" width="600"/>
