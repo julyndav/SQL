@@ -80,7 +80,7 @@ In addition, the system simplifies the management of client demographic informat
 
 <ul>
    <li>Interactive buttons to go to various forms and reports.</li>
-   <li>Billing Month buttons take the user to the individual months.</li>
+   <li>Month buttons take the user to the Transaction table that is filter via a query.</li>
 </ul>
 <p></p>
 
@@ -92,7 +92,7 @@ In addition, the system simplifies the management of client demographic informat
    <li>Place holder for possible client photo.</li>
    <li>Medicaid ID is primary key.</li>
    <li>Status dropdown: Can select either 'Medicaid' or 'PrivatePay' which are non medicaid clients.</li>
-   <li>MCO dropdown: Managed Care Organization (MCO) selection. Clients are under the following MCOs, United Health Care(U), Sunflower(S) or Aetna(A).</li>
+   <li>MCO dropdown: Managed Care Organization (MCO) selection. Clients are under the following MCOs, United Health Care(U), Sunflower(S) or Healthy Blue(HB).</li>
 </ul>
 <p></p>
 
