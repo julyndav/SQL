@@ -3,7 +3,7 @@
 ## Project overview:
 <i>Due to the sensitive nature of the underlying data, screenshots in this repository have been blurred or masked.</i>
 
-The database was built to centralize billing information, support accurate monthly reporting, and improve efficiency for both case managers and administrative staff. Daily service entries submitted by case managers roll up into monthly totals, which are then used to generate billing statements and performance reports. These reports help ensure:
+The database was built and optimized to centralize billing information, support accurate monthly reporting, and improve efficiency for both case managers and administrative staff. Daily service entries submitted by case managers roll up into monthly totals, which are then used to generate billing statements and performance reports. These reports help ensure:
 <ul>
 <li>Case managers meet their required monthly service quotas</li>
 <li>Clients do not exceed their authorized service units</li>
@@ -18,17 +18,19 @@ In addition, the system simplifies the management of client demographic informat
 <li>Centralized Billing Workflow – Daily entries automatically feed into monthly billing summaries, reducing manual effort and minimizing errors.</li>
 <li>User-Friendly Entry Forms – Custom forms and sub-forms to efficiently enter, update, and validate client records and service data.</li>
 <li>Automated Reporting – Monthly and on-demand reports provide insights into service utilization, quota tracking, and potential billing exceptions.</li>
- <li>Data Governance – Normalized table structures and relationships ensure data consistency and improve long-term maintainability.</li>
+<li>Data Governance – Normalized table structures and relationships ensure data consistency and improve long-term maintainability.</li>
 </ul>
 
 
 ### Skills & Tools Applied:
 <ul>
-<li>Database Architecture & Design: Relational design, table normalization, and referential integrity</li>   
-<li>Microsoft Access Development: Forms, sub-forms, queries, macros, and report design</li>
-<li>SQL: Joins, subqueries, criteria filters, calculated fields, and complex query logic</li>
-<li>Data Validation & Quality Controls: Input rules, lookup tables, and structured form workflows</li>
-<li>Reporting: Custom billing, utilization, and compliance reports for both clients and case managers</li>   
+<li>🧩 Relational Database Designn</li>   
+<li>⚙️ Process Optimization & System Modernization</li>
+<li>🧮 SQL & Query Logic: Joins(Left/Inner), Append and Update Queries, Criteria Filters and Calculated Fields</li>
+<li>🗃 Data Integrity & Governance Awareness</li>
+<li>📑 Reporting: Custom billing, utilization, and compliance reports for both clients and case managers</li> 
+<li>🖥️ Application Workflow Design</li> 
+<li>🛠 Debugging & Technical Problem Solving</li> 
 </ul>
 <br></br>
 
@@ -39,19 +41,18 @@ In addition, the system simplifies the management of client demographic informat
 | --- | --- |
 | MasterClientList | Stores client demographic and authorization information. |
 | Case Managers | Contains case manager profiles and related staffing information. |
-| Jan-Dec_Billing |Monthly tables used to capture service units for each respective month. |
-| Archive_Table_2025 | Consolidated archive containing all billing data for the 2025 calendar year. |
+| Transactions | One central table that holds all claim activity. |
+| Archive_Table_2025 | Consolidated archive containing all billing data for the previous calendar year. |
 <p></p>
 
 ### Queries:
 | Query Name | Purpose |
 | --- | --- |
-| Jan-Dec_Unit_Totals | Calculates monthly unit totals for each case manager, including Medicaid and Private Pay segments. |
-| Monthly Totals | Lists clients, corresponding Case Manager along units used per month. |
+| Append Query | Updates the main tables to add new clients and generate the transaction table for current month. |
+| Compliation Query | Query to generate individual client billing profile. |
 | Monthly_Totals_TCM | Provides case managers with a detailed view of their clients and each client's monthly unit utilization. |
 | TCM List | Generates a list of targeted case management (TCM) clients along with their MCO and date of birth. |
 | UHC Clients | List of United Health Care clients and their corresponding authorization number. |
-| janJOIN-decJOIN | Update queries used to sync new client additions across monthly billing tables. |
 <p></p>
 
 ### Forms:
