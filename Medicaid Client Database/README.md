@@ -24,7 +24,7 @@ In addition, the system simplifies the management of client demographic informat
 
 ### Skills & Tools Applied:
 <ul>
-<li>🧩 Relational Database Designn</li>   
+<li>🧩 Relational Database Design</li>   
 <li>⚙️ Process Optimization & System Modernization</li>
 <li>🧮 SQL & Query Logic: Joins(Left/Inner), Append and Update Queries, Criteria Filters and Calculated Fields</li>
 <li>🗃 Data Integrity & Governance Awareness</li>
