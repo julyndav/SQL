@@ -83,7 +83,7 @@ Conditional formatting highlights clients nearing unit limits to support proacti
 <p></p>
 <br></br>
 
-### Operational Impact
+## 🧠 Operational Impact:
 
 This redesign improved:
 <ul>
