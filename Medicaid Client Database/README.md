@@ -153,12 +153,16 @@ In addition, the system simplifies the management of client demographic informat
 
 ## MISC Database Elements:
 
-### Union Query Sample
-<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Monthly%20Billing%20Union%20Code.png" alt="union query" width="600"/>
+### Client 'Year-at-a-Glance' Summary Query
+<img src=(https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Join_Query.png) alt="union query" width="600"/>
 
-Union queries are used throughout the database to combine client demographic data with monthly billing entries. Each month includes its own union query, which merges four key fields from the MasterClientList with corresponding fields from the monthly Jan_Billing (and similar) tables.
-The join is performed using the Medicaid ID as the shared key, ensuring accurate alignment of client records across tables.
-These union queries power the monthly billing entry forms and allow case managers to view a complete picture of each client’s billing activity without duplicating data.
+This query directly ties into a client form. The form is 'view only'. 
+The query produces:
+<ul>
+<li>1 client</li>
+<li>12 months</li>
+<li>Values are pulled from Transaction_TBL</li>
+</ul>
 <p></p>
 
 ### Overall Units Used - TCM
