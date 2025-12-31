@@ -5,7 +5,7 @@
 
 This project is a Microsoft Access database designed to centralize Medicaid client billing, improve reporting accuracy, and streamline monthly service tracking for case managers and administrative staff.
 
-I redesigned and optimized the database to replace an inefficient legacy structure that relied on multiple monthly tables and duplicate data entry. The revised model consolidates all claim activity into a single transactional table, improves data integrity, and supports automated monthly and year-to-date reporting.
+I designed and optimized the database to replace an inefficient legacy structure that relied on multiple monthly tables and duplicate data entry. The revised model consolidates all claim activity into a single transactional table, improves data integrity, and supports automated monthly and year-to-date reporting.
 
 The database helps ensure:
 <ul>
