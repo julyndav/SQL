@@ -110,7 +110,7 @@ Additional capabilities include:
 
 <ul>
    <li>Interactive buttons to go to various forms and reports.</li>
-   <li>Month buttons take the user to the Transaction table that is filter via a query.</li>
+   <li>Month buttons take the user to the Transaction table that is filtered via a query.</li>
 </ul>
 <p></p>
 
