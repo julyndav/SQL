@@ -3,14 +3,18 @@
 ## Project overview:
 <i>Due to the sensitive nature of the underlying data, screenshots in this repository have been blurred or masked.</i>
 
-The database was built and optimized to centralize billing information, support accurate monthly reporting, and improve efficiency for both case managers and administrative staff. Daily service entries submitted by case managers roll up into monthly totals, which are then used to generate billing statements and performance reports. These reports help ensure:
+This project is a Microsoft Access database designed to centralize Medicaid client billing, improve reporting accuracy, and streamline monthly service tracking for case managers and administrative staff.
+
+I redesigned and optimized the database to replace an inefficient legacy structure that relied on multiple monthly tables and duplicate data entry. The revised model consolidates all claim activity into a single transactional table, improves data integrity, and supports automated monthly and year-to-date reporting.
+
+The database helps ensure:
 <ul>
-<li>Case managers meet their required monthly service quotas</li>
-<li>Clients do not exceed their authorized service units</li>
-<li>Billing data is consistent, accurate, and audit-ready</li>
+<li>Case managers meet required monthly service quotas</li>
+<li>Clients do not exceed authorized Medicaid service units</li>
+<li>Billing data remains accurate, consistent, and audit-ready</li>
 </ul>
 <p>
-In addition, the system simplifies the management of client demographic information, improves data entry workflows through structured forms, and establishes a reliable data foundation for future analyses such as aging reports or long-term service utilization trends.
+In addition to billing workflow improvements, the database also standardizes demographic and authorization records, supports operational oversight, and provides a strong data foundation for future utilization and trend analysis.
 </p>
 
 ### Key Features:
@@ -22,56 +26,82 @@ In addition, the system simplifies the management of client demographic informat
 </ul>
 
 
-### Skills & Tools Applied:
+### Primary Skills Demonstrated:
 <ul>
-<li>🧩 Relational Database Design</li>   
-<li>⚙️ Process Optimization & System Modernization</li>
-<li>🧮 SQL & Query Logic: Joins(Left/Inner), Append and Update Queries, Criteria Filters and Calculated Fields</li>
-<li>🗃 Data Integrity & Governance Awareness</li>
-<li>📑 Reporting: Custom billing, utilization, and compliance reports for both clients and case managers</li> 
-<li>🖥️ Application Workflow Design</li> 
-<li>🛠 Debugging & Technical Problem Solving</li> 
+<li>Relational database design & normalization</li>   
+<li>Systems modernization & workflow optimization</li>
+<li>SQL development: Joins(Left/Inner), Append and Update Queries, Criteria Filters and Calculated Fields</li>
+<li>Data integrity & governance awareness</li>
+<li>Operational reporting & audit support</li> 
+<li>Application workflow design</li> 
+<li>Debugging & technical problem solving</li> 
 </ul>
 <br></br>
 
-## Database Elements:
+## 🧩 Database Structure:
 
 ### Tables
 | Table Name |Purpose |
 | --- | --- |
-| MasterClientList | Stores client demographic and authorization information. |
-| Case_Managers | Contains case manager profiles and related staffing information. |
-| Transactions | One central table that holds all claim activity. |
-| Archive_Table_2025 | Consolidated archive containing all billing data for the previous calendar year. |
+| MasterClientList | Centralized client demographic & authorization data |
+| Case_Managers | Case manager profiles and caseload relationships |
+| Transaction_TBL | Consolidated transactional record of all billed units |
+| Archive_Table_2025 | Historical billing archive for prior year activity |
 <p></p>
 
 ### Queries:
 | Query Name | Purpose |
 | --- | --- |
-| Append_Query | Updates the main tables to add new clients and generate the transaction table for current month. |
-| Compliation_Query | Query to generate individual client billing profile. |
-| Monthly_Totals_TCM | Provides case managers with a detailed view of their clients and each client's monthly unit utilization. |
-| TCMList | Generates a list of targeted case management (TCM) clients along with their MCO and date of birth. |
-| UHCClients | List of United Health Care clients and their corresponding authorization number. |
+| Append_Query | Generates new monthly transaction records from client list |
+| Compliation_Query | Produces individual client billing profile (year-at-a-glance) |
+| Monthly_Totals_TCM | Case manager monthly utilization and quota tracking |
+| TCMList | Case manager client roster extract |
+| UHCClients | Authorization monitoring list for United Health Care clients |
+
+Queries were redesigned to run against the single transaction table, replacing multiple legacy month-specific tables.
 <p></p>
 
 ### Forms:
 | Form Name | Purpose |
 | --- | --- |
-| FRM_IA_Billing | Main navigation menu for the database. |
-| Case_Manager_Form | Enter case manager information and photo. Contains subform for TCM monthly unit totals |
-| Client_Billing_Overview | High-level view of client billing activity, including units, billed amounts, and amounts paid year-to-date. |
-| Client_Master_Form | Centralized form for managing client demographic and authorization details, with optional photo upload. |
-| Transaction | *SubForm* Monthly billing entry forms that calculate billing amounts automatically and allow payment entry tracking. |
+| FRM_IA_Billing | Main navigation and workflow entry point |
+| Case_Manager_Form | Case manager profile with unit summary subform |
+| Client_Billing_Overview | Read-only client billing and payment overview |
+| Client_Master_Form | Centralized client information management |
+| Transaction | *Subform* Monthly billing entry with automated calculations |
+
+The entry workflow minimizes manual calculations and enforces consistent billing across clients.
 <p></p>
 
 ### Reports: 
 | Report Name| Purpose |
 | --- | --- |
-| Overall_Monthly_Totals | Running total units per month for each client |
-| Overall_Units_Used-TCM | Case Manager client specific monthly units used/remaining |
+| Overall_Monthly_Totals | Running monthly totals by client |
+| Overall_Units_Used-TCM | Remaining units & authorization monitoring |
+
+Conditional formatting highlights clients nearing unit limits to support proactive case management and prevent claim denials.
 <p></p>
 <br></br>
+
+### Operational Impact
+
+This redesign improved:
+<ul>
+<li>Data reliability and reduction of duplicate records</li>
+<li>Billing accuracy and compliance readiness</li>
+<li>Ease of monthly reporting and audit support</li>
+<li>Workflow efficiency for both case managers and administrators</li>
+</ul>
+
+Additional capabilities include:
+<ul>
+<li>Front-end / Back-end database split for stability</li>
+<li>Excel export for ad-hoc reporting or auditing</li>
+<li>Automated monthly utilization summaries for leadership</li>
+</ul>
+<p></p>
+<br></br>
+
 
 # Database Overview:
  
@@ -178,10 +208,13 @@ This automated alerting ensures proactive management of client authorizations an
 </ul>
 <p></p>
 
-### Other Database Details:
+### Outcomes
+
+This project demonstrates the ability to:
 <ul>
-   <li><b>Excel Exporting:</b> All major tables and datasets can be exported to Excel for external reporting, auditing, or ad-hoc analysis.</li>
- <li><b>Front-End / Back-End Split:</b> The database is split for security and stability. The front-end (forms, queries, reports) is distributed to senior staff, while the back-end securely stores all tables and prevents accidental data modification.</li>
- <li><b> Monthly Emails:</b> Case managers and upper management receive automated monthly unit utilization summaries to support oversight and operational decision-making.</li>
-   </ul>
-<p></p>
+<li>Modernize and optimize an existing system rather than simply rebuild it
+<li>Align database structure to real operational workflows
+<li>Design reporting around business rules, not just raw tables
+<li>Translate case management processes into scalable data models
+
+It reflects both technical database skills and analytical thinking grounded in real-world program operations.
