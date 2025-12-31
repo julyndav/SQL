@@ -154,7 +154,7 @@ In addition, the system simplifies the management of client demographic informat
 ## MISC Database Elements:
 
 ### Client 'Year-at-a-Glance' Summary Query
-<img src=(https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Join_Query.png) alt="union query" width="600"/>
+<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Join_Query.png" alt="union query" width="600"/>
 
 This query directly ties into a client form. The form is 'view only'. 
 The query produces:
