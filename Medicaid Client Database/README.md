@@ -207,8 +207,11 @@ The report also uses conditional formatting to highlight clients who are approac
 This automated alerting ensures proactive management of client authorizations and minimizes compliance risks.
 </ul>
 <p></p>
+<br></br>
 
-### Outcomes
+
+
+## Outcomes
 
 This project demonstrates the ability to:
 <ul>
