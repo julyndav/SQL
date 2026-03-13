@@ -127,7 +127,7 @@ Additional capabilities include:
 <p></p>
 
 ### Case Manager Information
-<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Case%20Managers.png" alt="Case Manager Form" width="600"/>
+<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Case_Managers.png" alt="Case Manager Form" width="600"/>
 
 <ul>
    <li>Place holder for employee photo.</li>
