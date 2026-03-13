@@ -115,7 +115,7 @@ Additional capabilities include:
 <p></p>
 
 ### Client Information
-<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Client%20information.png" alt="Client Information" width="600"/>
+<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Client_information.png" alt="Client Information" width="600"/>
 
 <ul>
    <li>Client information entry.</li>
