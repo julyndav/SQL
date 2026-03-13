@@ -1,23 +1,25 @@
 # IA Client Medicaid Database
 
-## Project overview:
 <i>Due to the sensitive nature of the underlying data, screenshots in this repository have been blurred or masked.</i>
 
-This project is a Microsoft Access database designed to centralize Medicaid client billing, improve reporting accuracy, and streamline monthly service tracking for case managers and administrative staff.
+This project is a Microsoft Access database designed to centralize Medicaid client billing, improve reporting accuracy, and streamline monthly service tracking for case managers and administrative staff. All screenshots in this repository have been blurred or masked due to sensitive client data.
 
-I designed and optimized the database to replace an inefficient legacy structure that relied on multiple monthly tables and duplicate data entry. The revised model consolidates all claim activity into a single transactional table, improves data integrity, and supports automated monthly and year-to-date reporting.
+## Project overview:
+I redesigned an inefficient legacy billing system that relied on multiple monthly tables. 
 
-The database helps ensure:
+<b>The updated database:</b>
 <ul>
-<li>Case managers meet required monthly service quotas</li>
-<li>Clients do not exceed authorized Medicaid service units</li>
+<li>Consolidates all claim activity into a single transactional table (Transaction_TBL)</li>
+<li>Prevents duplicate monthly entries for clients via append queries with NOT EXISTS logic</li>
 <li>Billing data remains accurate, consistent, and audit-ready</li>
+ <li>Supports automated monthly and year-to-date reporting</li>
+ <li>Standardizes client demographics, authorizations, and case manager assignments</li>
 </ul>
 <p>
 In addition to billing workflow improvements, the database also standardizes demographic and authorization records, supports operational oversight, and provides a strong data foundation for future utilization and trend analysis.
 </p>
 
-### Key Features:
+### Key SQL and Database Features:
 <ul>
 <li>Centralized Billing Workflow – Daily entries automatically feed into monthly billing summaries, reducing manual effort and minimizing errors.</li>
 <li>User-Friendly Entry Forms – Custom forms and sub-forms to efficiently enter, update, and validate client records and service data.</li>
