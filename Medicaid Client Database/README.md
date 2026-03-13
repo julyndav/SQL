@@ -186,12 +186,16 @@ Additional capabilities include:
 ### Monthly Append Query
 <img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Monthly_Append_Query.png" width="600"/>
 
-This query directly ties into the billing form and appends the client data for a new month. 
-The query produces:
+The monthly append query uses <b>INSERT INTO ... SELECT</b> with <b>NOT EXISTS</b> logic to prevent duplicate monthly transactions per client. 
+<p></p>
+<b>Additional database queries:</b>
 <ul>
-<li>1 client</li>
-<li>12 months</li>
-<li>Values are pulled from Transaction_TBL</li>
+<li>Calculate running totals of billed units and remaining quotas using aggregate functions and criteria filters</li>
+<li>Joins across multiple tables (MasterClientList, Transaction_TBL, Copy Of Case Managers)</li>
+<li>Aggregations with SUM for both regular units and OTCM units</li>
+<li>Conditional aggregation using IIf(Month(...)=X, ...) to create monthly breakdowns</li>
+<li>Dynamic filtering with HAVING and user input ([Enter TCM Initials])</li>
+<li>Grouping and calculation of remaining units (InitialUnits + PA_Units - TotalUnits)</li>
 </ul>
 <p></p>
 
