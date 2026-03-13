@@ -183,10 +183,10 @@ Additional capabilities include:
 
 ## MISC Database Elements:
 
-### Client 'Year-at-a-Glance' Summary Query
-<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Join_Query.png" alt="union query" width="600"/>
+### Monthly Append Query
+<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Monthly_Append_Query.png" width="600"/>
 
-This query directly ties into a client form. The form is 'view only'. 
+This query directly ties into the billing form and appends the client data for a new month. 
 The query produces:
 <ul>
 <li>1 client</li>
