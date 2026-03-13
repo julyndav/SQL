@@ -3,6 +3,7 @@
 <i>Due to the sensitive nature of the underlying data, screenshots in this repository have been blurred or masked.</i>
 
 This project is a Microsoft Access database designed to centralize Medicaid client billing, improve reporting accuracy, and streamline monthly service tracking for case managers and administrative staff. All screenshots in this repository have been blurred or masked due to sensitive client data.
+<br>
 
 ## Project overview:
 I redesigned an inefficient legacy billing system that relied on multiple monthly tables. 
@@ -18,17 +19,48 @@ I redesigned an inefficient legacy billing system that relied on multiple monthl
 <p>
 In addition to billing workflow improvements, the database also standardizes demographic and authorization records, supports operational oversight, and provides a strong data foundation for future utilization and trend analysis.
 </p>
+<br>
 
-### Key SQL and Database Features:
+## Key SQL and Database Features:
+
+#### Centralized Billing Workflow
 <ul>
-<li>Centralized Billing Workflow – Daily entries automatically feed into monthly billing summaries, reducing manual effort and minimizing errors.</li>
-<li>User-Friendly Entry Forms – Custom forms and sub-forms to efficiently enter, update, and validate client records and service data.</li>
-<li>Automated Reporting – Monthly and on-demand reports provide insights into service utilization, quota tracking, and potential billing exceptions.</li>
-<li>Data Governance – Normalized table structures and relationships ensure data consistency and improve long-term maintainability.</li>
+ <li>New monthly records are generated via an append query that pulls Medicaid IDs from MasterClientList and inserts them into Transaction_TBL only if a record does not already exist for that month (NOT EXISTS).</li></ul>
+
+#### Aggregated Reporting Queries
+<ul>
+ <li>Monthly and year-to-date utilization is calculated with SUM aggregations, including conditional logic per month using IIf(Month(ServiceMonth)=X, Units, 0).</li>
+
+<li>Complex queries join multiple tables (MasterClientList, Transaction_TBL, Copy Of Case Managers) to generate comprehensive client billing reports.</li>
+
+<li>Running totals and remaining units are calculated with expressions like (InitialUnits + PA_Units - SUM(TotalUnits)).</li>
+
+<li>Dynamic filtering with HAVING [Enter TCM Initials] allows case managers to view reports tailored to their caseload.</li>
 </ul>
 
+#### Main Reporting Query
+<ul>
+ <li>Produces a year-at-a-glance summary for each client, showing monthly billed units, OTCM units, total units, remaining units, and authorization balances.</li>
+<li>Demonstrates SQL skills in joins, grouping, conditional aggregation, calculated fields, and parameterized filters.</li>
+</ul>
 
-### Primary Skills Demonstrated:
+#### Data Governance & Automation
+<ul>
+ <li> Queries enforce data integrity, ensuring no duplicate transactions. </li>
+<li> Conditional formatting alerts case managers when clients approach unit limits, preventing overbilling.</li>
+</ul>
+<p></p>
+
+#### Additional capabilities include:
+<ul>
+<li>Front-end / Back-end database split for stability</li>
+<li>Excel export for ad-hoc reporting or auditing</li>
+<li>Automated monthly utilization summaries for leadership</li>
+</ul>
+<p></p>
+<br>
+
+## Primary Skills Demonstrated:
 <ul>
 <li>Relational database design & normalization</li>   
 <li>Systems modernization & workflow optimization</li>
@@ -85,24 +117,8 @@ Conditional formatting highlights clients nearing unit limits to support proacti
 <p></p>
 <br></br>
 
-## 🧠 Operational Impact:
 
-This redesign improved:
-<ul>
-<li>Data reliability and reduction of duplicate records</li>
-<li>Billing accuracy and compliance readiness</li>
-<li>Ease of monthly reporting and audit support</li>
-<li>Workflow efficiency for both case managers and administrators</li>
-</ul>
 
-Additional capabilities include:
-<ul>
-<li>Front-end / Back-end database split for stability</li>
-<li>Excel export for ad-hoc reporting or auditing</li>
-<li>Automated monthly utilization summaries for leadership</li>
-</ul>
-<p></p>
-<br></br>
 
 
 # Database Overview:
