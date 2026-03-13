@@ -86,11 +86,11 @@ In addition to billing workflow improvements, the database also standardizes dem
 ### Queries:
 | Query Name | Purpose |
 | --- | --- |
-| Append_Query | Generates new monthly transaction records from client list |
+| Monthly_Append_Query | Generates new monthly transaction records from client list |
 | Compliation_Query | Produces individual client billing profile (year-at-a-glance) |
 | Monthly_Totals_TCM | Case manager monthly utilization and quota tracking |
 | TCMList | Case manager client roster extract |
-| UHCClients | Authorization monitoring list for United Health Care clients |
+| UHC_Clients | Authorization monitoring list for United Health Care clients |
 
 Queries were redesigned to run against the single transaction table, replacing multiple legacy month-specific tables.
 <p></p>
@@ -99,7 +99,7 @@ Queries were redesigned to run against the single transaction table, replacing m
 | Form Name | Purpose |
 | --- | --- |
 | FRM_IA_Billing | Main navigation and workflow entry point |
-| Case_Manager_Form | Case manager profile with unit summary subform |
+| Case_Manager_Form | Case manager profile with unit summary subform. Option to view client list. |
 | Client_Billing_Overview | Read-only client billing and payment overview |
 | Client_Master_Form | Centralized client information management |
 | Transaction | *Subform* Monthly billing entry with automated calculations |
@@ -205,16 +205,6 @@ Conditional formatting highlights clients nearing unit limits to support proacti
 <img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Monthly_Append_Query.png" width="600"/>
 
 The monthly append query uses <b>INSERT INTO ... SELECT</b> with <b>NOT EXISTS</b> logic to prevent duplicate monthly transactions per client. 
-<p></p>
-<b>Additional database queries:</b>
-<ul>
-<li>Calculate running totals of billed units and remaining quotas using aggregate functions and criteria filters</li>
-<li>Joins across multiple tables (MasterClientList, Transaction_TBL, Copy Of Case Managers)</li>
-<li>Aggregations with SUM for both regular units and OTCM units</li>
-<li>Conditional aggregation using IIf(Month(...)=X, ...) to create monthly breakdowns</li>
-<li>Dynamic filtering with HAVING and user input ([Enter TCM Initials])</li>
-<li>Grouping and calculation of remaining units (InitialUnits + PA_Units - TotalUnits)</li>
-</ul>
 <p></p>
 
 ### Overall Units Used - TCM
