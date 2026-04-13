@@ -182,7 +182,6 @@ Conditional formatting highlights clients nearing unit limits to support proacti
 <p></p>
 
 ### View UHC Auths
-<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/UHC%20Clients.png" alt="uhc auths" width="600"/>
 
 <ul>
    <li>All United clients require an Authorization or claims will be denied.This list keeps tracks of those with and without authorizations.</li>
