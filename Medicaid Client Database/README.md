@@ -1,4 +1,4 @@
-# IA Client Medicaid Database
+# Client Medicaid Database
 
 <i>Due to the sensitive nature of the underlying data, screenshots in this repository have been blurred or masked.</i>
 
