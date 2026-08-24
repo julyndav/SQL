@@ -124,7 +124,7 @@ Conditional formatting highlights clients nearing unit limits to support proacti
 # Database Overview:
  
 ### Main Menu
-<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Menu.png" alt="Main Menu" width="600"/>
+<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Menu.png" alt="Main Menu" width="600"/>
 
 <ul>
    <li>Interactive buttons to go to various forms and reports.</li>
@@ -155,7 +155,7 @@ Conditional formatting highlights clients nearing unit limits to support proacti
 <p></p>
 
 ### Billing per Client
-<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Client%20Billing%20Overview.png" alt="Billing per Client form" width="600"/>
+<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Client_Billing_Overview.png" alt="Billing per Client form" width="600"/>
 
 <ul>
    <li>There is no data entry on this form, simply for information purposes.</li>
@@ -164,7 +164,7 @@ Conditional formatting highlights clients nearing unit limits to support proacti
 <p></p>
 
 ### TCM Units Report
-<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/TCMs%20unit%20report.png" alt="tcm unit report" width="600"/>
+<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/TCM_Unit_Report.png" alt="tcm unit report" width="600"/>
 
 <ul>
    <li>Running total of units that a Case Managers clients have used for the year.</li>
@@ -174,7 +174,7 @@ Conditional formatting highlights clients nearing unit limits to support proacti
 <p></p>
 
 ### Clients by TCM
-<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/TCM%20List.png" alt="tcm unit report" width="600"/>
+<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/TCM%20List.png" alt="tcm unit report" width="600"/>
 
 <ul>
    <li>A simple client list by case manager.</li>
@@ -189,7 +189,7 @@ Conditional formatting highlights clients nearing unit limits to support proacti
 <p></p>
 
 ### Billing Month Entry
-<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Monthly%20Billing%20Form.png" alt="monthly billing" width="600"/>
+<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Monthly%20Billing%20Form.png" alt="monthly billing" width="600"/>
 
 <ul>
    <li>Small Unit_Totals sub form. You can enter case managers monthly units and private pay units. Only Medicaid units can be billed for. Private Pay have to be processed by the TCM. 'Total TCM Units' and 'Total Billed Units' - this is to ensure that all TCM units have been billed for; the two values should be the same. The 'Refresh' button is to make sure all units entered are in the totals.</li>
