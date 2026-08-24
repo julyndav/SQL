@@ -1,7 +1,5 @@
 # Client Medicaid Database
 
-<i>Due to the sensitive nature of the underlying data, screenshots in this repository have been blurred or masked.</i>
-
 This project is a Microsoft Access database designed to centralize Medicaid client billing, improve reporting accuracy, and streamline monthly service tracking for case managers and administrative staff. All screenshots in this repository have been blurred or masked due to sensitive client data.
 <br>
 
