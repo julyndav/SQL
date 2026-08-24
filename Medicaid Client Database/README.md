@@ -1,51 +1,49 @@
 # Client Medicaid Database
 
-This project is a Microsoft Access database designed to centralize Medicaid client billing, improve reporting accuracy, and streamline monthly service tracking for case managers and administrative staff. All screenshots in this repository have been blurred or masked due to sensitive client data.
+A Microsoft Access database designed to centralize Medicaid client billing, improve reporting accuracy, and streamline monthly service tracking for case managers and administrative staff.
+         
+<i>All data shown in this repository; client names, IDs, and figures are fictional and for illustration only.</i>
 <br>
 
 ## Project overview:
-I redesigned an inefficient legacy billing system that relied on multiple monthly tables. 
+I redesigned an inefficient legacy billing system that relied on multiple Excel monthly tables. 
 
 <b>The updated database:</b>
 <ul>
 <li>Consolidates all claim activity into a single transactional table (Transaction_TBL)</li>
 <li>Prevents duplicate monthly entries for clients via append queries with NOT EXISTS logic</li>
-<li>Billing data remains accurate, consistent, and audit-ready</li>
- <li>Supports automated monthly and year-to-date reporting</li>
- <li>Standardizes client demographics, authorizations, and case manager assignments</li>
+<li>Keeps billing data accurate, consistent, and audit-ready</li>
+<li>Supports automated monthly and year-to-date reporting
+<li>Standardizes client demographics, authorizations, and case manager assignments</li>
 </ul>
+Beyond billing workflow improvements, the database also standardizes demographic and authorization records, supports operational oversight, and provides a stronger data foundation for future utilization and trend analysis.
 <p>
-In addition to billing workflow improvements, the database also standardizes demographic and authorization records, supports operational oversight, and provides a strong data foundation for future utilization and trend analysis.
-</p>
 <br>
 
 ## Key SQL and Database Features:
 
 #### Centralized Billing Workflow
 <ul>
- <li>New monthly records are generated via an append query that pulls Medicaid IDs from MasterClientList and inserts them into Transaction_TBL only if a record does not already exist for that month (NOT EXISTS).</li></ul>
+ <li>New monthly records are generated via an append query that pulls Medicaid IDs from 'MasterClientList' and inserts them into 'Transaction_TBL' only if a record doesn't already exist for that month (NOT EXISTS).</li></ul>
 
 #### Aggregated Reporting Queries
 <ul>
- <li>Monthly and year-to-date utilization is calculated with SUM aggregations, including conditional logic per month using IIf(Month(ServiceMonth)=X, Units, 0).</li>
+ <li>Monthly and year-to-date utilization calculated with SUM aggregations, including conditional logic per month using IIf(Month(ServiceMonth)=X, Units, 0)</li>
 
-<li>Complex queries join multiple tables (MasterClientList, Transaction_TBL, Copy Of Case Managers) to generate comprehensive client billing reports.</li>
+<li>Complex queries join multiple tables (MasterClientList, Transaction_TBL, Case_Managers) to generate comprehensive client billing reports</li>
 
-<li>Running totals and remaining units are calculated with expressions like (InitialUnits + PA_Units - SUM(TotalUnits)).</li>
+<li>Running totals and remaining units calculated with expressions like (InitialUnits + PA_Units - SUM(TotalUnits))</li>
 
-<li>Dynamic filtering with HAVING [Enter TCM Initials] allows case managers to view reports tailored to their caseload.</li>
+<li>Dynamic filtering with HAVING [Enter TCM Initials] lets case managers view reports tailored to their caseload</li>
 </ul>
 
 #### Main Reporting Query
-<ul>
- <li>Produces a year-at-a-glance summary for each client, showing monthly billed units, OTCM units, total units, remaining units, and authorization balances.</li>
-<li>Demonstrates SQL skills in joins, grouping, conditional aggregation, calculated fields, and parameterized filters.</li>
-</ul>
+Produces a year-at-a-glance summary for each client, showing monthly billed units, OTCM units, total units, remaining units, and authorization balances. This demonstrates using joins, grouping, conditional aggregation, calculated fields, and parameterized filters.
 
 #### Data Governance & Automation
 <ul>
- <li> Queries enforce data integrity, ensuring no duplicate transactions. </li>
-<li> Conditional formatting alerts case managers when clients approach unit limits, preventing overbilling.</li>
+ <li> Queries enforce data integrity, ensuring no duplicate transactions </li>
+<li> Conditional formatting alerts case managers when clients approach unit limits, preventing overbilling</li>
 </ul>
 <p></p>
 
@@ -62,7 +60,7 @@ In addition to billing workflow improvements, the database also standardizes dem
 <ul>
 <li>Relational database design & normalization</li>   
 <li>Systems modernization & workflow optimization</li>
-<li>SQL development: Joins(Left/Inner), Append and Update Queries, Criteria Filters and Calculated Fields</li>
+<li>SQL development: joins (left/inner), append and update queries, criteria filters, and calculated fields</li>
 <li>Data integrity & governance awareness</li>
 <li>Operational reporting & audit support</li> 
 <li>Application workflow design</li> 
@@ -87,7 +85,7 @@ In addition to billing workflow improvements, the database also standardizes dem
 | Monthly_Append_Query | Generates new monthly transaction records from client list |
 | Compliation_Query | Produces individual client billing profile (year-at-a-glance) |
 | Monthly_Totals_TCM | Case manager monthly utilization and quota tracking |
-| TCMList | Case manager client roster extract |
+| TCMList | Case manager client roster |
 | UHC_Clients | Authorization monitoring list for United Health Care clients |
 
 Queries were redesigned to run against the single transaction table, replacing multiple legacy month-specific tables.
@@ -115,27 +113,21 @@ Conditional formatting highlights clients nearing unit limits to support proacti
 <p></p>
 <br></br>
 
-
-
-
-
 # Database Overview:
  
 ### Main Menu
 <img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Menu.png" alt="Main Menu" width="600"/>
 
 <ul>
-   <li>Interactive buttons to go to various forms and reports.</li>
-   <li>Month buttons take the user to the Transaction table that is filtered via a query.</li>
+   <li>Interactive buttons navigate to various forms and reports</li>
+   <li>Month buttons open the Transaction table, filtered via a query</li>
 </ul>
 <p></p>
 
 ### Client Information
-
-
 <ul>
    <li>Client information entry.</li>
-   <li>Place holder for possible client photo.</li>
+   <li>Place holder for optional client photo.</li>
    <li>Medicaid ID is primary key.</li>
    <li>Status dropdown: Can select either 'Medicaid' or 'PrivatePay' which are non medicaid clients.</li>
    <li>MCO dropdown: Managed Care Organization (MCO) selection. Clients are under the following MCOs, United Health Care(U), Sunflower(S) or Healthy Blue(HB).</li>
@@ -143,12 +135,9 @@ Conditional formatting highlights clients nearing unit limits to support proacti
 <p></p>
 
 ### Case Manager Information
-
-
 <ul>
-   <li>Place holder for employee photo.</li>
-   <li>Sub-form (Unit Summary). Lists case manager's monthly unit totals that they billed for. PP=Private Pay(no medicaid funding). Unit Summary values can be entered on this form or when entering the monthly billing units.</li>
-   <li>ID is primary key.</li>
+   <li>Place holder for optional employee photo.</li>
+   <li>Sub-form (Unit Summary). Lists case manager's monthly unit totals that they billed for. PP=Private Pay(no medicaid funding).Values can be entered here or during monthly billing entry</li>
 </ul>
 <p></p>
 
@@ -156,8 +145,8 @@ Conditional formatting highlights clients nearing unit limits to support proacti
 <img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Client_Billing_Overview.png" alt="Billing per Client form" width="600"/>
 
 <ul>
-   <li>There is no data entry on this form, simply for information purposes.</li>
-   <li>OTCM Units >> Other TCM Units. If another case manager bills on a client that is not their's, those units go in this field.</li>
+   <li>Read-only form, for information purposes only
+"OTCM Units" = Other TCM Units — units billed by a case manager on a client that isn't theirs go into this field</li>
  </ul>
 <p></p>
 
@@ -165,9 +154,9 @@ Conditional formatting highlights clients nearing unit limits to support proacti
 <img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/TCM_Unit_Report.png" alt="tcm unit report" width="600"/>
 
 <ul>
-   <li>Running total of units that a Case Managers clients have used for the year.</li>
-   <li>IU >> Initial Units. All Medicaid clients are alloted 240 units per year.</li>
-   <li>PA >> Prior Authorization. When client exceed their 240 unit limit, case managers can request additional units.</li>
+   <li>Running total of units a case manager's clients have used for the year</li>
+   <li>"IU" = Initial Units. All Medicaid clients are allotted 240 units per year</li>
+   <li>"PA" = Prior Authorization. Additional units case managers can request once a client exceeds their 240-unit limit</li>
  </ul>
 <p></p>
 
@@ -182,7 +171,7 @@ Conditional formatting highlights clients nearing unit limits to support proacti
 ### View UHC Auths
 
 <ul>
-   <li>All United clients require an Authorization or claims will be denied.This list keeps tracks of those with and without authorizations.</li>
+   <li>All United Healthcare clients require an authorization, or claims will be denied; this list tracks which clients have one and which don't</li>
    </ul>
 <p></p>
 
@@ -190,26 +179,26 @@ Conditional formatting highlights clients nearing unit limits to support proacti
 <img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Monthly%20Billing%20Form.png" alt="monthly billing" width="600"/>
 
 <ul>
-   <li>Small Unit_Totals sub form. You can enter case managers monthly units and private pay units. Only Medicaid units can be billed for. Private Pay have to be processed by the TCM. 'Total TCM Units' and 'Total Billed Units' - this is to ensure that all TCM units have been billed for; the two values should be the same. The 'Refresh' button is to make sure all units entered are in the totals.</li>
- <li>In the actual entry form, 'Units', 'OUnits', 'Paid', 'Claim#', and 'Note' are the only fields to enter data.  'Total Units', '$Bill', and 'Balance' are all calculated fields.</li>
+   <li>Small Unit_Totals subform: enter case managers' monthly units and private pay units. Only Medicaid units can be billed. Private Pay units are processed by the TCM. "Total TCM Units" and "Total Billed Units" should match, confirming all TCM units have been billed; the Refresh button ensures all entered units are reflected in the totals</li>
+ <li>In the entry form itself, only 'Units', 'OUnits', 'Paid', 'Claim#', and 'Note' are entered manually — 'Total Units', '$Bill', and 'Balance' are calculated fields</li>
    </ul>
 <p></p>
 <br></br>
 
-## MISC Database Elements:
+## Additional Database Elements:
 
 ### Monthly Append Query
 <img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Monthly_Append_Query.png" width="600"/>
 
-The monthly append query uses <b>INSERT INTO ... SELECT</b> with <b>NOT EXISTS</b> logic to prevent duplicate monthly transactions per client. 
+Uses INSERT INTO ... SELECT with NOT EXISTS logic to prevent duplicate monthly transactions per client.
 <p></p>
 
 ### Overall Units Used - TCM
 <img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Overall%20Units%20Used%20TCM.png" alt="union query" width="600"/>
 
-This report is generated and emailed to all case managers on a monthly basis. It provides a detailed breakdown of each client’s unit utilization and remaining authorized units. This prevents overbilling and helps ensure clients do not exceed their allotted service limits, which would result in claim denials.
+Generated and emailed to all case managers monthly, providing a detailed breakdown of each client's unit utilization and remaining authorized units — helping prevent overbilling and ensuring clients don't exceed allotted service limits (which would otherwise trigger claim denials).
 <p></p>
-The report also uses conditional formatting to highlight clients who are approaching their unit limits:
+TThe report uses conditional formatting to flag clients approaching their unit limits:
 <ul>
 <li>Yellow highlight – Remaining units drop to 50. </li>
 <li>Red highlight – Remaining units fall to 20 or fewer, signaling that a case manager must submit paperwork for additional units. </li>
