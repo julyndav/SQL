@@ -194,7 +194,7 @@ Uses INSERT INTO ... SELECT with NOT EXISTS logic to prevent duplicate monthly t
 <p></p>
 
 ### Overall Units Used - TCM
-<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/Project%20Images/Overall%20Units%20Used%20TCM.png" alt="union query" width="600"/>
+<img src="https://github.com/julyndav/SQL/blob/main/Medicaid%20Client%20Database/TCM_Unit_Report.png" alt="union query" width="600"/>
 
 Generated and emailed to all case managers monthly, providing a detailed breakdown of each client's unit utilization and remaining authorized units — helping prevent overbilling and ensuring clients don't exceed allotted service limits (which would otherwise trigger claim denials).
 <p></p>
